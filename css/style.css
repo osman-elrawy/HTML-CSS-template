@@ -1,0 +1,298 @@
+*{
+    box-sizing: border-box;
+   
+}
+
+.container{
+
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* start header */
+.header{
+padding: 50px;
+}
+
+.header .container{
+ display: flex;
+ justify-content: space-between; 
+ align-items: center;
+
+}
+.logo{
+    width: 70px;
+}
+h6{    font-family: emoji;
+    margin-top: -17px;
+    font-size: 11px;
+}
+.header .links{
+    position: relative;
+}
+
+.header .links .icons{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+}
+.header .links:hover .icons span:nth-child(2){
+    width: 100%;
+    background-color: red;
+    
+}
+.header .links .icons span{
+    background-color: black;
+    margin-bottom: 5px;
+}
+.header .links .icons span:first-child{
+    height: 3px;
+    width: 100%;
+
+}
+.header .links .icons span:nth-child(2){
+height: 3px;
+width: 60%;
+transition: 0.3s;
+}
+
+.header .links .icons span:last-child{
+    height: 3px;
+    width: 100%;
+}
+.header .links ul  {
+   list-style: none;
+   margin: 0;
+   padding:0 ;
+   background-color: #f6f6f6;
+   position: absolute;
+   right: 0;
+   top: calc(100% + 20px);
+   min-width: 200px;
+   display: none;
+}
+.header .links:hover ul{
+    display: block;
+}
+
+.header .links ul::before{
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color:transparent transparent#f6f6f6 transparent;
+    position: absolute;
+    right: 5px;
+    top :-20px;
+    
+}
+.header .links ul a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+   font-family:'Times New Roman', Times, serif;
+  
+}
+.header .links ul a:hover{
+    padding-left: 25px;
+    font-style:oblique;
+    background-color: rgb(187, 158, 139);
+    border-radius: 5px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.header .links ul li a{
+    border-bottom: 1px solid #dddd;
+}
+ /* end header  */
+ /* start ladning page  */
+.landing  {
+    margin: 0;
+    background-image: url(../imgs/shape-a.png);
+   
+    
+    background-color: #f6f6f6;
+    text-align: center;
+    height: 600px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+
+}
+.h11{
+     
+    color: #10cab7;
+    font-weight: bold;
+   font-size: 3rem;
+    text-transform: capitalize;
+    font-family: emoji;
+    line-height: 1.8px;
+}
+.smallt{
+    font-family: sans-serif;
+    color: #00000054;
+}
+ /* end ladning page  */
+
+ /* servis start  */
+ .servis{
+    padding-top: 60px;
+    padding-bottom: 60px;
+   
+    
+    /* height: 400px; */
+
+ }
+ .servis .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-gap: 30px;
+    text-align: center;
+    justify-items: center;
+    
+ }
+ .ptext{
+     color: #777;
+     font-size: 18px;
+     font-family:serif;
+ }
+ .font{
+     width: 50px;
+ }
+/* servis end  */
+ /* special heading  start*/
+ .special-h{
+    padding-top:60px ;
+    padding-bottom: 60px;
+     background-color: #f6f6f6;
+    
+    
+ }
+
+.special-heading {
+    color:rgba(0, 0, 0, 0.292);
+    font-weight: 800;
+    text-align: center;
+    font-size: 100px;
+    letter-spacing: -2px;
+    margin: 0;
+  
+
+}
+.special-heading +p{
+    color:#797979;
+    text-align: center;
+    font-size: 20px;
+    margin-top: -70px 0 0;
+
+ 
+}
+@media (max-width: 767px){
+    .special-heading{
+        font-size: 60px;
+    }
+    .special-heading+p{
+        font-size: 10px;
+    }
+
+}
+
+
+ /* special heading  start*/
+  /* servises-contact start */
+  
+.servises-contact{
+    padding-top:10px ;
+   display: grid;
+   grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+   grid-gap: 20px;
+   
+ 
+}
+@media (max-width: 767px){
+    .servises-contact{
+        text-align: center;
+      grid-gap: 40px;
+      margin-bottom: 20px;
+    }
+
+}
+.img-conent{
+   
+    margin-bottom: -22px;
+    width: 35px;
+}
+
+
+.img-s{
+    width: 236px;
+}
+.web{
+    display: flex;
+
+}
+ 
+
+
+
+
+
+
+
+
+  /* servises-contact emd  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     /* small */
+@media (min-width: 768px) {
+    .container{
+        width: 750px;    
+    }
+
+}
+
+/* medium*/
+@media (min-width: 992px) {
+.container{
+width: 970px;
+}
+ 
+}
+/* large */
+@media (min-width: 1200px){
+
+.container{
+    width: 1170px;
+    
+}
+
+
+}
